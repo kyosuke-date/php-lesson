@@ -56,7 +56,7 @@ if($form['email'] === ''){
                 <dt>メールアドレス<span class="required">必須</span></dt>
                 <dd>
                     <input type="text" name="email" size="35" maxlength="255" value="<?php h($form['email']); ?>"/>
-                    <?php if(isset($error['email']) && $form['email'] === 'blank'); ?>
+                    <?php if(isset($error['email']) && $form['email'] === 'blank'): ?>
                         <p class="error">* メールアドレスを入力してください</p>
                     <?php endif; ?>
                     <p class="error">* 指定されたメールアドレスはすでに登録されています</p>
